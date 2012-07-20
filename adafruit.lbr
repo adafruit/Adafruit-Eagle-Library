@@ -25067,6 +25067,74 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <text x="-8" y="-9.5" size="0.8128" layer="27">&gt;VALUE</text>
 <hole x="0.5" y="0.85" drill="3"/>
 </package>
+<package name="TSSOP28">
+<description>&lt;b&gt;LP Package, 28-Pin TSSOP&lt;/b&gt;&lt;p&gt;
+
+Source: http://allegromicro.com/datafile/3979.pdf</description>
+<wire x1="-4.7896" y1="-2.1828" x2="4.7896" y2="-2.1828" width="0.1524" layer="21"/>
+<wire x1="4.7896" y1="2.1828" x2="4.7896" y2="-2.1828" width="0.1524" layer="21"/>
+<wire x1="4.7896" y1="2.1828" x2="-4.7896" y2="2.1828" width="0.1524" layer="21"/>
+<wire x1="-4.7896" y1="-2.1828" x2="-4.7896" y2="2.1828" width="0.1524" layer="21"/>
+<circle x="-3.9256" y="-1.3442" radius="0.401" width="0" layer="21"/>
+<smd name="1" x="-4.225" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="2" x="-3.575" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="3" x="-2.925" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="4" x="-2.275" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="5" x="-1.625" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="6" x="-0.975" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="7" x="-0.325" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="8" x="0.325" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="9" x="0.975" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="10" x="1.625" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="11" x="2.275" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="12" x="2.925" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="13" x="3.575" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="14" x="4.225" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="15" x="4.225" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="16" x="3.575" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="17" x="2.925" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="18" x="2.275" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="19" x="1.625" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="20" x="0.975" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="21" x="0.325" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="22" x="-0.325" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="23" x="-0.975" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="24" x="-1.625" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="25" x="-2.275" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="26" x="-2.925" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="27" x="-3.575" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="28" x="-4.225" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<text x="-5.1706" y="-2.0828" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="6.1612" y="-2.0828" size="1.016" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-4.375" y1="-3.3" x2="-4.075" y2="-2.25" layer="51"/>
+<rectangle x1="-3.725" y1="-3.3" x2="-3.425" y2="-2.25" layer="51"/>
+<rectangle x1="-3.075" y1="-3.3" x2="-2.775" y2="-2.25" layer="51"/>
+<rectangle x1="-2.425" y1="-3.3" x2="-2.125" y2="-2.25" layer="51"/>
+<rectangle x1="-1.775" y1="-3.3" x2="-1.475" y2="-2.25" layer="51"/>
+<rectangle x1="-1.125" y1="-3.3" x2="-0.825" y2="-2.25" layer="51"/>
+<rectangle x1="-0.475" y1="-3.3" x2="-0.175" y2="-2.25" layer="51"/>
+<rectangle x1="0.175" y1="-3.3" x2="0.475" y2="-2.25" layer="51"/>
+<rectangle x1="0.825" y1="-3.3" x2="1.125" y2="-2.25" layer="51"/>
+<rectangle x1="1.475" y1="-3.3" x2="1.775" y2="-2.25" layer="51"/>
+<rectangle x1="2.125" y1="-3.3" x2="2.425" y2="-2.25" layer="51"/>
+<rectangle x1="2.775" y1="-3.3" x2="3.075" y2="-2.25" layer="51"/>
+<rectangle x1="3.425" y1="-3.3" x2="3.725" y2="-2.25" layer="51"/>
+<rectangle x1="4.075" y1="-3.3" x2="4.375" y2="-2.25" layer="51"/>
+<rectangle x1="4.075" y1="2.25" x2="4.375" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="3.425" y1="2.25" x2="3.725" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="2.775" y1="2.25" x2="3.075" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="2.125" y1="2.25" x2="2.425" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="1.475" y1="2.25" x2="1.775" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="0.825" y1="2.25" x2="1.125" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="0.175" y1="2.25" x2="0.475" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-0.475" y1="2.25" x2="-0.175" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-1.125" y1="2.25" x2="-0.825" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-1.775" y1="2.25" x2="-1.475" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-2.425" y1="2.25" x2="-2.125" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-3.075" y1="2.25" x2="-2.775" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-3.725" y1="2.25" x2="-3.425" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-4.375" y1="2.25" x2="-4.075" y2="3.3" layer="51" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POWERJACK">
@@ -37593,7 +37661,7 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <gate name="G$1" symbol="MAX6921" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PLCC-S28">
+<device name="AQI" package="PLCC-S28">
 <connects>
 <connect gate="G$1" pin="BLANK" pad="13"/>
 <connect gate="G$1" pin="CLK" pad="15"/>
@@ -37623,6 +37691,41 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <connect gate="G$1" pin="OUT9" pad="17"/>
 <connect gate="G$1" pin="VBB" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AUI" package="TSSOP28">
+<connects>
+<connect gate="G$1" pin="BLANK" pad="20"/>
+<connect gate="G$1" pin="CLK" pad="22"/>
+<connect gate="G$1" pin="DIN" pad="6"/>
+<connect gate="G$1" pin="DOUT" pad="9"/>
+<connect gate="G$1" pin="GND" pad="21"/>
+<connect gate="G$1" pin="LOAD" pad="23"/>
+<connect gate="G$1" pin="OUT0" pad="5"/>
+<connect gate="G$1" pin="OUT1" pad="4"/>
+<connect gate="G$1" pin="OUT10" pad="19"/>
+<connect gate="G$1" pin="OUT11" pad="18"/>
+<connect gate="G$1" pin="OUT12" pad="17"/>
+<connect gate="G$1" pin="OUT13" pad="16"/>
+<connect gate="G$1" pin="OUT14" pad="15"/>
+<connect gate="G$1" pin="OUT15" pad="14"/>
+<connect gate="G$1" pin="OUT16" pad="13"/>
+<connect gate="G$1" pin="OUT17" pad="12"/>
+<connect gate="G$1" pin="OUT18" pad="11"/>
+<connect gate="G$1" pin="OUT19" pad="10"/>
+<connect gate="G$1" pin="OUT2" pad="3"/>
+<connect gate="G$1" pin="OUT3" pad="2"/>
+<connect gate="G$1" pin="OUT4" pad="1"/>
+<connect gate="G$1" pin="OUT5" pad="28"/>
+<connect gate="G$1" pin="OUT6" pad="27"/>
+<connect gate="G$1" pin="OUT7" pad="26"/>
+<connect gate="G$1" pin="OUT8" pad="25"/>
+<connect gate="G$1" pin="OUT9" pad="24"/>
+<connect gate="G$1" pin="VBB" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
