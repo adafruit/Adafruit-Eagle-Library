@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -96,8 +97,12 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -29608,6 +29613,25 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 </polygon>
 <rectangle x1="2.775" y1="-3" x2="3.075" y2="-2.25" layer="51"/>
 </package>
+<package name="WS2812">
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
+<circle x="2.934" y="-2.688" radius="0.1414" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.1" width="0.127" layer="21"/>
+<smd name="NC" x="-2" y="1.7" dx="2" dy="1.1" layer="1"/>
+<smd name="LEDVDD" x="-2" y="0" dx="2" dy="1.1" layer="1"/>
+<smd name="VSS" x="-2" y="-1.7" dx="2" dy="1.1" layer="1"/>
+<smd name="DO" x="2" y="-1.7" dx="2" dy="1.1" layer="1"/>
+<smd name="DI" x="2" y="0" dx="2" dy="1.1" layer="1"/>
+<smd name="VDD" x="2" y="1.7" dx="2" dy="1.1" layer="1"/>
+<text x="-1.7" y="2.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="-4.1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POWERJACK">
@@ -38612,6 +38636,61 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <pin name="VCC" x="15.24" y="15.24" length="middle" direction="pwr" rot="R180"/>
 <pin name="SCKO" x="15.24" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="VREG" x="15.24" y="10.16" length="middle" rot="R180"/>
+</symbol>
+<symbol name="WS2812">
+<pin name="VDD" x="5.08" y="15.24" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="DI" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="GND" x="0" y="-10.16" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="DO" x="12.7" y="-2.54" visible="pad" length="middle" direction="out" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="6.35" x2="-5.08" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-6.35" y2="6.35" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="6.35" width="0.254" layer="94"/>
+<wire x1="3.81" y1="6.35" x2="2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="3.81" x2="-5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.81" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="LEDVDD" x="-2.54" y="15.24" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="8.89" x2="-5.08" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="8.89" x2="-5.08" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="6.35" x2="-1.27" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="8.89" x2="-2.54" y2="8.89" width="0.254" layer="94"/>
+<wire x1="2.54" y1="6.35" x2="2.54" y2="8.89" width="0.254" layer="94"/>
+<wire x1="2.54" y1="8.89" x2="-1.27" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="6.35" x2="-3.81" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-3.81" y2="6.35" width="0.254" layer="94"/>
+<wire x1="1.27" y1="6.35" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="1.27" y1="6.35" x2="2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="5.08" y1="-1.27" x2="7.62" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<text x="3.81" y="1.27" size="1.27" layer="94" rot="R180">WS2812</text>
+<wire x1="-3.81" y1="3.81" x2="-5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.81" x2="-2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="6.35" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="6.35" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -49346,6 +49425,25 @@ AT42QT1070 in standalone mode has 5 inputs (guard + 4 key) and open drain output
 <connect gate="G$1" pin="VCC" pad="19"/>
 <connect gate="G$1" pin="VREG" pad="20"/>
 <connect gate="G$2" pin="PAD" pad="EXP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WS2812" prefix="LED">
+<gates>
+<gate name="G$1" symbol="WS2812" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="WS2812">
+<connects>
+<connect gate="G$1" pin="DI" pad="DI"/>
+<connect gate="G$1" pin="DO" pad="DO"/>
+<connect gate="G$1" pin="GND" pad="VSS"/>
+<connect gate="G$1" pin="LEDVDD" pad="LEDVDD"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
