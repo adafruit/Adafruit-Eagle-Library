@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -29632,6 +29632,23 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <text x="-1.7" y="2.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-4.1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="WS2812B">
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
+<circle x="2.934" y="-2.688" radius="0.1414" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.1" width="0.127" layer="21"/>
+<smd name="VDD" x="-2" y="1.7" dx="2" dy="1.1" layer="1"/>
+<smd name="DOUT" x="-2" y="-1.7" dx="2" dy="1.1" layer="1"/>
+<smd name="VSS" x="2" y="-1.7" dx="2" dy="1.1" layer="1"/>
+<smd name="DIN" x="2" y="1.7" dx="2" dy="1.1" layer="1"/>
+<text x="-1.7" y="2.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="-4.1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POWERJACK">
@@ -38691,6 +38708,59 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <wire x1="2.54" y1="3.81" x2="1.27" y2="3.81" width="0.254" layer="94"/>
 <wire x1="2.54" y1="3.81" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="10.16" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="WS2812B">
+<pin name="DI" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="GND" x="0" y="-10.16" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="DO" x="12.7" y="-2.54" visible="pad" length="middle" direction="out" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="6.35" x2="-5.08" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-6.35" y2="6.35" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="6.35" width="0.254" layer="94"/>
+<wire x1="3.81" y1="6.35" x2="2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="3.81" x2="-5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.81" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="VDD" x="0" y="14.986" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<wire x1="0" y1="10.16" x2="0" y2="8.89" width="0.254" layer="94"/>
+<wire x1="0" y1="8.89" x2="-5.08" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="8.89" x2="-5.08" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="6.35" x2="-1.27" y2="8.89" width="0.254" layer="94"/>
+<wire x1="2.54" y1="6.35" x2="2.54" y2="8.89" width="0.254" layer="94"/>
+<wire x1="2.54" y1="8.89" x2="0" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="6.35" x2="-3.81" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-3.81" y2="6.35" width="0.254" layer="94"/>
+<wire x1="1.27" y1="6.35" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="1.27" y1="6.35" x2="2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="5.08" y1="-1.27" x2="7.62" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<text x="3.81" y="1.27" size="1.27" layer="94" rot="R180">WS2812B</text>
+<wire x1="-3.81" y1="3.81" x2="-5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.81" x2="-2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="6.35" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="6.35" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="8.89" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="8.89" x2="5.08" y2="8.89" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -49443,6 +49513,69 @@ AT42QT1070 in standalone mode has 5 inputs (guard + 4 key) and open drain output
 <connect gate="G$1" pin="DO" pad="DO"/>
 <connect gate="G$1" pin="GND" pad="VSS"/>
 <connect gate="G$1" pin="LEDVDD" pad="LEDVDD"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WS2812B" prefix="LED">
+<description>Features and Benefits
+
+* Intelligent reverse connect protection, the power supply reverse connection does not damage the IC.
+
+* The control circuit and the LED share the only power source.
+Control circuit and RGB chip are integrated in a package of 5050 components, form a complete control of pixel point.
+
+* Built-in signal reshaping circuit, after wave reshaping to the next driver, ensure wave-form distortion not accumulate.
+
+* Built-in electric reset circuit and power lost reset circuit.
+
+* Each pixel of the three primary color can achieve 256 brightness display, completed 16777216 color full color display, and scan frequency not less than 400Hz/s.
+
+* Cascading port transmission signal by single line.
+
+* Any two point the distance more than 5m transmission signal without any increase circuit.
+
+* When the refresh rate is 30fps, cascade number are not less than1024 points.
+
+* Send data at speeds of 800Kbps.
+
+*The color of the light were highly consistent, cost-effective.
+
+
+
+Applications
+
+Full-color module, Full color soft lights a lamp strip.
+LED decorative lighting, Indoor/outdoor LED video irregular screen.
+
+
+General description
+
+WS2812B is a intelligent control LED light source that the control circuit and RGB chip are integrated in a package of 5050 components. It internal include intelligent digital port data latch and signal reshaping amplification drive circuit. Also include a precision internal oscillator and a 12V voltage programmable constant curre-nt control part, effectively ensuring the pixel point light color height consistent.
+The data transfer protocol use single NZR communication mode. After the pixel power-on reset, the DIN port receive data from controller, the first pixel collect initial 24bit data then sent to the internal data latch, the other data which reshaping by the internal signal reshaping amplification circuit sent to the next cascade pixel through the DO port. After transmission for each pixel,the signal to reduce 24bit. pixel adopt auto reshaping transmit technology, making the pixel cascade number is not limited the signal transmission, only depend on the speed of signal transmission.
+LED with low driving voltage, environmental protection and energy saving, high brightness, scattering angle is large, good consistency, low power, long life and other advantages. The control chip integrated in LED above becoming more simple circuit, small volume, convenient installation.
+
+
+Absolute Maximum Ratings
+Power supply voltage:  VDD  +3.5V..+5.3V
+Input voltage:  VI -0.5V..VDD+0.5V
+
+
+
+based on WS2812 from https://github.com/adafruit/Adafruit-Eagle-Library</description>
+<gates>
+<gate name="G$1" symbol="WS2812B" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="WS2812B">
+<connects>
+<connect gate="G$1" pin="DI" pad="DIN"/>
+<connect gate="G$1" pin="DO" pad="DOUT"/>
+<connect gate="G$1" pin="GND" pad="VSS"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
 <technologies>
