@@ -13,9 +13,9 @@ to download this as a zip file.
 2. Choose `Options` and from the drop down that appears, `Directories`.
 3. Change the Libraries line from: `$EAGLEDIR/lbr` to something like:
 
-    > $EAGLEDIR/lbr:$HOME/external_lbrs (for OS X)
+    > `$EAGLEDIR/lbr;$HOME/external_lbrs` (for OS X)
 
-    > $EAGLEDIR\lbr;$HOME\external_lbrs (for Windows)
+    > `$EAGLEDIR\lbr;$HOME\external_lbrs` (for Windows)
 
 4. Click `OK` to save your changes.
 5. Eagle will prompt to create the directory if it does not already exist. Note 
