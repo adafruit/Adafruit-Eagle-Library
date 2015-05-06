@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -46,11 +46,11 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -26399,12 +26399,6 @@ Source: 008-0260-0_E.pdf</description>
 <text x="19.939" y="52.07" size="1.016" layer="21" font="vector">SDA</text>
 <text x="29.4539" y="3.81" size="1.016" layer="21" font="vector">IOr</text>
 <pad name="MOSI" x="66.167" y="27.94" drill="1" diameter="1.778" shape="octagon"/>
-<polygon width="0.127" layer="42">
-<vertex x="0" y="44.45"/>
-<vertex x="10.16" y="44.45"/>
-<vertex x="10.16" y="31.75"/>
-<vertex x="0" y="31.75"/>
-</polygon>
 <pad name="SCK" x="63.627" y="27.94" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="MISO" x="63.627" y="30.48" drill="1" diameter="1.778" shape="square"/>
 <pad name="5V_ICSP" x="66.167" y="30.48" drill="1" diameter="1.778" shape="octagon"/>
@@ -33343,58 +33337,6 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <text x="-5.588" y="23.241" size="1.016" layer="21" font="vector" ratio="10" align="center-right">9</text>
 <text x="-5.588" y="23.749" size="1.016" layer="21" font="vector" ratio="10" align="center-right">~</text>
 <text x="0.127" y="25.527" size="1.27" layer="21" font="vector" ratio="12" rot="R180" align="center">Pro</text>
-<attribute name="NAME" x="7.747" y="22.479" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="17.653" y="20.574" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="6.477" y="22.479" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="-1.524" y="14.224" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="9.652" y="19.304" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="-3.302" y="18.034" size="1.016" layer="27" font="vector" rot="R180"/>
-<attribute name="NAME" x="11.5176" y="18.272" size="1.016" layer="25" rot="R270"/>
-<attribute name="VALUE" x="12.4156" y="15.891" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="9.017" y="22.606" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="18.923" y="20.193" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="5.888" y="2.773" size="0.8128" layer="25" ratio="18"/>
-<attribute name="VALUE" x="5.859" y="-6.202" size="1.016" layer="27" font="vector" ratio="10"/>
-<attribute name="NAME" x="13.589" y="24.638" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="20.574" y="20.574" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="10.922" y="24.5745" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="12.8905" y="34.163" size="1.016" layer="27" font="vector" rot="R180"/>
-<attribute name="NAME" x="10.303" y="20.3122" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="22.493" y="18.6612" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="4.064" y="15.621" size="0.8128" layer="25" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="3.302" y="16.764" size="1.016" layer="27" font="vector" ratio="10" rot="R90"/>
-<attribute name="NAME" x="2.667" y="22.479" size="0.8128" layer="25" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="-2.413" y="31.115" size="1.016" layer="27" font="vector" ratio="10" rot="R270"/>
-<attribute name="NAME" x="3.683" y="26.162" size="0.8128" layer="25" ratio="18"/>
-<attribute name="VALUE" x="2.54" y="32.639" size="1.016" layer="27" font="vector" ratio="10"/>
-<attribute name="NAME" x="10.93" y="33.639" size="0.8128" layer="25" ratio="18" rot="R180"/>
-<attribute name="VALUE" x="10.93" y="34.29" size="0.4064" layer="27" ratio="10" rot="R180"/>
-<attribute name="OC_NEWARK" value="15R0272" x="7.62" y="10.287" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="ATMEGA88PA-MU" x="7.62" y="10.287" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="7.62" y="10.287" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="1715491" x="7.62" y="10.287" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.16" y="7.112" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="10.795" y="6.985" size="1.016" layer="27" font="vector" rot="R180"/>
-<attribute name="NAME" x="1.8288" y="29.2862" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="-3.175" y="29.21" size="1.27" layer="27" rot="R270"/>
-<attribute name="NAME" x="-0.0762" y="-0.7112" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="0" y="-5.715" size="1.27" layer="27"/>
-<attribute name="NAME" x="10.922" y="10.922" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="18.542" y="10.16" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="17.0688" y="29.2862" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="12.065" y="29.21" size="1.27" layer="27" rot="R270"/>
-<attribute name="NAME" x="4.826" y="14.351" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="VALUE" x="-3.302" y="14.732" size="1.016" layer="27" font="vector" ratio="10" rot="R180"/>
-<attribute name="NAME" x="3.937" y="-0.254" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="-3.556" y="4.445" size="1.016" layer="27" font="vector" ratio="10" rot="R270"/>
-<attribute name="NAME" x="11.303" y="0" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="17.272" y="3.429" size="1.016" layer="27" font="vector" ratio="10" rot="R270"/>
-<attribute name="NAME" x="4.3688" y="14.0462" size="0.8128" layer="25" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="-0.635" y="13.97" size="0.4064" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="2.937" y="20.744" size="0.8128" layer="25" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="-3.161" y="20.109" size="1.016" layer="27" ratio="10" rot="R90"/>
-<attribute name="NAME" x="10.525" y="22.436" size="0.8128" layer="25" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="7.733" y="22.436" size="1.016" layer="27" ratio="10" rot="R270"/>
 <pad name="A5" x="-7.62" y="-4.699" drill="1.1"/>
 <pad name="A4" x="-7.62" y="-2.159" drill="1.1"/>
 <pad name="A3" x="-7.62" y="0.381" drill="1.1"/>
@@ -33424,6 +33366,60 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <circle x="6.985" y="25.781" radius="1.27633125" width="0.127" layer="51"/>
 <circle x="-6.985" y="25.781" radius="1.27" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="51"/>
+</package>
+<package name="ESP-12">
+<wire x1="-8" y1="13" x2="8" y2="13" width="0.127" layer="21"/>
+<wire x1="8" y1="13" x2="8" y2="-11" width="0.127" layer="21"/>
+<wire x1="8" y1="-11" x2="-8" y2="-11" width="0.127" layer="21"/>
+<wire x1="-8" y1="-11" x2="-8" y2="13" width="0.127" layer="21"/>
+<wire x1="-6" y1="5.2" x2="6" y2="5.2" width="0.127" layer="21"/>
+<wire x1="6" y1="5.2" x2="6" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="6" y1="-9.8" x2="-6" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="-6" y1="-9.8" x2="-6" y2="5.2" width="0.127" layer="21"/>
+<text x="-0.1" y="8.3" size="1.27" layer="21" font="vector" ratio="12" align="center">Antenna</text>
+<smd name="1" x="-7.5" y="4.5" dx="2" dy="1.2" layer="1"/>
+<smd name="2" x="-7.5" y="2.5" dx="2" dy="1.2" layer="1"/>
+<smd name="3" x="-7.5" y="0.5" dx="2" dy="1.2" layer="1"/>
+<smd name="4" x="-7.5" y="-1.5" dx="2" dy="1.2" layer="1"/>
+<smd name="5" x="-7.5" y="-3.5" dx="2" dy="1.2" layer="1"/>
+<smd name="6" x="-7.5" y="-5.5" dx="2" dy="1.2" layer="1"/>
+<smd name="7" x="-7.5" y="-7.5" dx="2" dy="1.2" layer="1"/>
+<smd name="8" x="-7.5" y="-9.5" dx="2" dy="1.2" layer="1"/>
+<smd name="9" x="7.5" y="-9.5" dx="2" dy="1.2" layer="1"/>
+<smd name="10" x="7.5" y="-7.5" dx="2" dy="1.2" layer="1"/>
+<smd name="11" x="7.5" y="-5.5" dx="2" dy="1.2" layer="1"/>
+<smd name="12" x="7.5" y="-3.5" dx="2" dy="1.2" layer="1"/>
+<smd name="13" x="7.5" y="-1.5" dx="2" dy="1.2" layer="1"/>
+<smd name="14" x="7.5" y="0.5" dx="2" dy="1.2" layer="1"/>
+<smd name="15" x="7.5" y="2.5" dx="2" dy="1.2" layer="1"/>
+<smd name="16" x="7.5" y="4.5" dx="2" dy="1.2" layer="1"/>
+<text x="-5" y="-12" size="1.4224" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+<text x="4.5" y="-12" size="1.4224" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<rectangle x1="-8" y1="6" x2="8" y2="13" layer="41"/>
+<rectangle x1="-8" y1="6" x2="8" y2="13" layer="42"/>
+</package>
+<package name="TESTCLIP">
+<wire x1="-15.4" y1="-12.9" x2="-9" y2="-12.9" width="0.127" layer="21"/>
+<wire x1="-9" y1="-12.9" x2="-7" y2="-12.9" width="0.127" layer="21"/>
+<wire x1="-7" y1="-12.9" x2="7" y2="-12.9" width="0.127" layer="21"/>
+<wire x1="7" y1="-12.9" x2="9" y2="-12.9" width="0.127" layer="21"/>
+<wire x1="9" y1="-12.9" x2="15.4" y2="-12.9" width="0.127" layer="21"/>
+<wire x1="15.4" y1="-12.9" x2="15.4" y2="12.9" width="0.127" layer="21"/>
+<wire x1="15.4" y1="12.9" x2="-15.4" y2="12.9" width="0.127" layer="21"/>
+<wire x1="-15.4" y1="12.9" x2="-15.4" y2="-12.9" width="0.127" layer="21"/>
+<hole x="-13.4" y="0" drill="3.5"/>
+<hole x="13.4" y="0" drill="3.5"/>
+<wire x1="-9" y1="-12.9" x2="-9" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="-9" y1="-9.8" x2="-9" y2="12.8" width="0.127" layer="21"/>
+<wire x1="-9" y1="12.8" x2="9" y2="12.8" width="0.127" layer="21"/>
+<wire x1="9" y1="12.8" x2="9" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="9" y1="-9.8" x2="9" y2="-12.9" width="0.127" layer="21"/>
+<wire x1="-9" y1="-9.8" x2="-7" y2="-9.8" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-7" y1="-9.8" x2="7" y2="-9.8" width="0.127" layer="21" style="shortdash"/>
+<wire x1="7" y1="-9.8" x2="9" y2="-9.8" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-7" y1="-9.8" x2="-7" y2="-12.9" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-7" y1="-12.9" x2="7" y2="-12.9" width="0.127" layer="21" style="shortdash"/>
+<wire x1="7" y1="-12.9" x2="7" y2="-9.8" width="0.127" layer="21" style="shortdash"/>
 </package>
 </packages>
 <symbols>
@@ -42867,6 +42863,42 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <wire x1="-2.54" y1="17.78" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="15.24" x2="2.54" y2="15.24" width="0.254" layer="94"/>
 <wire x1="2.54" y1="15.24" x2="2.54" y2="17.78" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ESP8266-12">
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="RESET" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="ADC" x="-17.78" y="2.54" length="middle" direction="pas"/>
+<pin name="CH_PD" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="GPIO16" x="-17.78" y="-2.54" length="middle"/>
+<pin name="GPIO14" x="-17.78" y="-5.08" length="middle"/>
+<pin name="GPIO12" x="-17.78" y="-7.62" length="middle"/>
+<pin name="GPIO13" x="-17.78" y="-10.16" length="middle"/>
+<pin name="VCC" x="-17.78" y="-12.7" length="middle" direction="pwr"/>
+<pin name="GND" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO15" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO2" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO0" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO5" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO4" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="RXD" x="17.78" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="TXD" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<text x="0" y="0" size="1.778" layer="94" font="vector" ratio="12" rot="R90" align="center">ESP12</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -54131,6 +54163,36 @@ AT42QT1070 in standalone mode has 5 inputs (guard + 4 key) and open drain output
 <connect gate="G$1" pin="TX" pad="TX"/>
 <connect gate="G$1" pin="USB" pad="USB"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP-12" prefix="X" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ESP8266-12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP-12">
+<connects>
+<connect gate="G$1" pin="ADC" pad="2"/>
+<connect gate="G$1" pin="CH_PD" pad="3"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="GPIO0" pad="12"/>
+<connect gate="G$1" pin="GPIO12" pad="6"/>
+<connect gate="G$1" pin="GPIO13" pad="7"/>
+<connect gate="G$1" pin="GPIO14" pad="5"/>
+<connect gate="G$1" pin="GPIO15" pad="10"/>
+<connect gate="G$1" pin="GPIO16" pad="4"/>
+<connect gate="G$1" pin="GPIO2" pad="11"/>
+<connect gate="G$1" pin="GPIO4" pad="14"/>
+<connect gate="G$1" pin="GPIO5" pad="13"/>
+<connect gate="G$1" pin="RESET" pad="1"/>
+<connect gate="G$1" pin="RXD" pad="15"/>
+<connect gate="G$1" pin="TXD" pad="16"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
