@@ -33643,54 +33643,18 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <wire x1="-6.2738" y1="13.9446" x2="6.4262" y2="13.9446" width="0.381" layer="21"/>
 <wire x1="6.4262" y1="13.9446" x2="7.6962" y2="12.6746" width="0.381" layer="21" curve="-90"/>
 <text x="-0.1778" y="-1.5494" size="1.27" layer="21" font="vector" ratio="10" rot="R270" align="center">Trinket 3v</text>
-<attribute name="NAME" x="2.032" y="3.556" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="10.16" y="1.651" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="0.508" y="3.556" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="-7.874" y="6.985" size="1.016" layer="27" font="vector" rot="R270"/>
-<attribute name="NAME" x="2.3876" y="1.397" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="-8.1534" y="-10.922" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="4.812" y="-11.065" size="1.016" layer="25" rot="R270"/>
-<attribute name="VALUE" x="9.287" y="-12.949" size="1.016" layer="27" font="vector"/>
-<attribute name="NAME" x="3.1115" y="-4.318" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="-5.588" y="-17.78" size="1.27" layer="27" font="vector" ratio="10"/>
-<attribute name="NAME" x="3.429" y="3.683" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="11.938" y="0.635" size="1.27" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="-1.478" y="-11.07" size="0.8128" layer="25" ratio="18"/>
-<attribute name="VALUE" x="-1.253" y="-14.457" size="0.4064" layer="27" font="vector" ratio="10"/>
-<attribute name="NAME" x="4.826" y="-7.62" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="9.398" y="-9.144" size="1.27" layer="27" font="vector"/>
-<attribute name="NAME" x="-5.969" y="5.207" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="-3.302" y="16.129" size="1.27" layer="27" font="vector" rot="R180"/>
-<attribute name="NAME" x="3.318" y="1.6432" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="13.73" y="1.0082" size="1.016" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="-3.159" y="1.694" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="-9.412" y="7.704" size="1.016" layer="27" font="vector" rot="R270"/>
-<attribute name="NAME" x="3.81" y="-3.556" size="0.8128" layer="25" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="9.398" y="-1.651" size="1.016" layer="27" font="vector" ratio="10"/>
-<attribute name="BOM" value="EXCLUDE" x="-4.572" y="-11.938" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="EXCLUDE" x="6.858" y="-11.938" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-7.0358" y="-6.9342" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="NAME" x="5.6642" y="-6.9342" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="NAME" x="6.1468" y="3.8608" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="6.223" y="-1.143" size="1.27" layer="27"/>
-<attribute name="NAME" x="-6.5532" y="3.8608" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="-6.477" y="-1.143" size="1.27" layer="27"/>
-<attribute name="NAME" x="3.81" y="-7.112" size="0.8128" layer="25" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="9.779" y="-5.715" size="1.016" layer="27" font="vector" ratio="10"/>
-<attribute name="NAME" x="6.604" y="4.191" size="0.8128" layer="25" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="5.969" y="14.605" size="1.016" layer="27" font="vector" ratio="10"/>
 <circle x="-5.6388" y="9.6266" radius="1.1" width="0.254" layer="21"/>
 <circle x="5.7912" y="9.6266" radius="1.1" width="0.254" layer="21"/>
-<pad name="P$1" x="-6.2738" y="2.0066" drill="1.016" diameter="1.778"/>
-<pad name="P$2" x="-6.2738" y="-0.5334" drill="1.016" diameter="1.778"/>
-<pad name="P$3" x="-6.2738" y="-3.0734" drill="1.016" diameter="1.778"/>
-<pad name="P$4" x="-6.2738" y="-5.6134" drill="1.016" diameter="1.778"/>
-<pad name="P$5" x="-6.2738" y="-8.1534" drill="1.016" diameter="1.778"/>
-<pad name="P$10" x="6.4262" y="2.0066" drill="1.016" diameter="1.778"/>
-<pad name="P$9" x="6.4262" y="-0.5334" drill="1.016" diameter="1.778"/>
-<pad name="P$8" x="6.4262" y="-3.0734" drill="1.016" diameter="1.778"/>
-<pad name="P$7" x="6.4262" y="-5.6134" drill="1.016" diameter="1.778"/>
-<pad name="P$6" x="6.4262" y="-8.1534" drill="1.016" diameter="1.778"/>
+<pad name="1" x="-6.2738" y="2.0066" drill="1.016" diameter="1.778"/>
+<pad name="2" x="-6.2738" y="-0.5334" drill="1.016" diameter="1.778"/>
+<pad name="3" x="-6.2738" y="-3.0734" drill="1.016" diameter="1.778"/>
+<pad name="4" x="-6.2738" y="-5.6134" drill="1.016" diameter="1.778"/>
+<pad name="5" x="-6.2738" y="-8.1534" drill="1.016" diameter="1.778"/>
+<pad name="10" x="6.4262" y="2.0066" drill="1.016" diameter="1.778"/>
+<pad name="9" x="6.4262" y="-0.5334" drill="1.016" diameter="1.778"/>
+<pad name="8" x="6.4262" y="-3.0734" drill="1.016" diameter="1.778"/>
+<pad name="7" x="6.4262" y="-5.6134" drill="1.016" diameter="1.778"/>
+<pad name="6" x="6.4262" y="-8.1534" drill="1.016" diameter="1.778"/>
 <circle x="-5.6388" y="-11.9634" radius="1.778" width="0.254" layer="21"/>
 <circle x="5.7912" y="-11.9634" radius="1.778" width="0.254" layer="21"/>
 <wire x1="-4.0238" y1="14.1046" x2="-4.0238" y2="14.9146" width="0.381" layer="21"/>
@@ -54861,16 +54825,16 @@ AT42QT1070 in standalone mode has 5 inputs (guard + 4 key) and open drain output
 <devices>
 <device name="" package="TRINKET_3V3">
 <connects>
-<connect gate="G$1" pin="3V3" pad="P$6"/>
-<connect gate="G$1" pin="BAT+" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="GPIO0" pad="P$9"/>
-<connect gate="G$1" pin="GPIO1" pad="P$8"/>
-<connect gate="G$1" pin="GPIO2" pad="P$7"/>
-<connect gate="G$1" pin="GPIO3" pad="P$4"/>
-<connect gate="G$1" pin="GPIO4" pad="P$3"/>
-<connect gate="G$1" pin="RST" pad="P$5"/>
-<connect gate="G$1" pin="USB+" pad="P$10"/>
+<connect gate="G$1" pin="3V3" pad="6"/>
+<connect gate="G$1" pin="BAT+" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GPIO0" pad="9"/>
+<connect gate="G$1" pin="GPIO1" pad="8"/>
+<connect gate="G$1" pin="GPIO2" pad="7"/>
+<connect gate="G$1" pin="GPIO3" pad="4"/>
+<connect gate="G$1" pin="GPIO4" pad="3"/>
+<connect gate="G$1" pin="RST" pad="5"/>
+<connect gate="G$1" pin="USB+" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>
