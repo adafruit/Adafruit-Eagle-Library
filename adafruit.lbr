@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -49139,7 +49139,7 @@ http://www.linear.com/pc/productDetail.jsp?navId=H0,C1,C1003,C1042,C1031,C1061,P
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP2300X" prefix="IC">
+<deviceset name="MCP23008" prefix="IC">
 <description>&lt;B&gt;MCP23008&lt;/B&gt;
 &lt;p&gt;
 Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups</description>
