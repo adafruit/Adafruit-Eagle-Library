@@ -8333,8 +8333,8 @@ type 0309, grid 2.5 mm</description>
 <wire x1="3.6" y1="-2.2" x2="3.6" y2="3.4" width="0.127" layer="21"/>
 <wire x1="3.6" y1="3.4" x2="-3.4" y2="3.4" width="0.127" layer="21"/>
 <wire x1="-3.4" y1="-2.2" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
-<pad name="1" x="1.8" y="0" drill="1" diameter="2.1844"/>
-<pad name="2" x="-1.7" y="0" drill="1" diameter="2.1844"/>
+<pad name="1" x="1.8" y="0" drill="1.2" diameter="2.54"/>
+<pad name="2" x="-1.7" y="0" drill="1.2" diameter="2.54"/>
 <text x="3" y="5" size="1.27" layer="25" rot="R180">&gt;NAME</text>
 </package>
 <package name="UMAX10">
