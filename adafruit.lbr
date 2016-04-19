@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10140,7 +10140,7 @@ http://www.4uconnector.com/online/object/4udrawing/01528.pdf</description>
 <text x="-3.302" y="0.762" size="1.27" layer="21" font="vector" rot="R180">-</text>
 </package>
 <package name="JST-PH-2-THM-RA">
-<description>&lt;b&gt;S2B-PH-K-S&lt;/b&gt; 
+<description>&lt;b&gt;S2B-PH-K-S&lt;/b&gt;
 &lt;p&gt;
 JST PH 2-pin thru-home side entry</description>
 <wire x1="-3" y1="6.3" x2="3" y2="6.3" width="0.127" layer="51"/>
@@ -33797,6 +33797,40 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <pad name="2" x="8.89" y="1.27" drill="1" diameter="1.778"/>
 <pad name="1" x="6.35" y="1.27" drill="1" diameter="1.778"/>
 </package>
+<package name="HUZZAH_BREAKOUT">
+<description>16-Lead HUZZAH Breakout Board</description>
+<wire x1="0" y1="0" x2="25.47" y2="0" width="0.127" layer="21"/>
+<wire x1="25.47" y1="0" x2="25.47" y2="38.44" width="0.127" layer="21"/>
+<wire x1="25.47" y1="38.44" x2="0" y2="38.44" width="0.127" layer="21"/>
+<wire x1="0" y1="38.44" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="GND1" x="2.54" y="6.46" drill="1"/>
+<pad name="VBAT" x="2.54" y="9" drill="1"/>
+<pad name="VCC1" x="2.54" y="11.54" drill="1"/>
+<pad name="13" x="2.54" y="14.08" drill="1"/>
+<pad name="12" x="2.54" y="16.62" drill="1"/>
+<pad name="14" x="2.54" y="19.16" drill="1"/>
+<pad name="16" x="2.54" y="21.7" drill="1"/>
+<pad name="EN" x="2.54" y="24.24" drill="1"/>
+<pad name="A" x="2.54" y="26.78" drill="1"/>
+<pad name="RST" x="2.54" y="29.32" drill="1"/>
+<pad name="GND2" x="23" y="6.46" drill="1"/>
+<pad name="LDO" x="23" y="9" drill="1"/>
+<pad name="3V3" x="23" y="11.54" drill="1"/>
+<pad name="15" x="23" y="14.08" drill="1"/>
+<pad name="2" x="23" y="16.62" drill="1"/>
+<pad name="0" x="23" y="19.16" drill="1"/>
+<pad name="4" x="23" y="21.7" drill="1"/>
+<pad name="5" x="23" y="24.24" drill="1"/>
+<pad name="RX1" x="23" y="26.78" drill="1"/>
+<pad name="TX1" x="23" y="29.32" drill="1"/>
+<pad name="NC1" x="6.46" y="2.54" drill="1"/>
+<pad name="TX" x="9" y="2.54" drill="1"/>
+<pad name="RX" x="11.54" y="2.54" drill="1"/>
+<pad name="VCC" x="14.08" y="2.54" drill="1"/>
+<pad name="NC2" x="16.62" y="2.54" drill="1"/>
+<pad name="GND" x="19.16" y="2.54" drill="1"/>
+<text x="12.22" y="26.34" size="1.27" layer="21" rot="R270">ADAFRUIT HUZZAH</text>
+</package>
 <package name="WS2812B-NARROW">
 <wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="1.6" width="0.127" layer="21"/>
@@ -43571,6 +43605,39 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <circle x="2.54" y="2.54" radius="1.27" width="0.254" layer="94"/>
 <circle x="2.54" y="30.48" radius="1.27" width="0.254" layer="94"/>
 </symbol>
+<symbol name="HUZZAH_BREAKOUT_ESP8266">
+<description>&lt;b&gt;Adafruit HUZZAH ESP8266 Breakout Board&lt;/b&gt;</description>
+<pin name="RST" x="-17.78" y="12.7" length="middle"/>
+<pin name="A" x="-17.78" y="10.16" length="middle"/>
+<pin name="EN" x="-17.78" y="7.62" length="middle"/>
+<pin name="16" x="-17.78" y="5.08" length="middle"/>
+<pin name="14" x="-17.78" y="2.54" length="middle"/>
+<pin name="12" x="-17.78" y="0" length="middle"/>
+<pin name="13" x="-17.78" y="-2.54" length="middle"/>
+<pin name="VCC1" x="-17.78" y="-5.08" length="middle"/>
+<pin name="VBAT" x="-17.78" y="-7.62" length="middle"/>
+<pin name="GND1" x="-17.78" y="-10.16" length="middle"/>
+<pin name="TX1" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="RX1" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="5" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="4" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="0" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="2" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="15" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="3V3" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="LDO" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND2" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="NC1" x="-7.62" y="-22.86" length="middle" rot="R90"/>
+<pin name="TX" x="-5.08" y="-22.86" length="middle" rot="R90"/>
+<pin name="RX" x="-2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="VCC" x="0" y="-22.86" length="middle" rot="R90"/>
+<pin name="NC2" x="2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="GND" x="5.08" y="-22.86" length="middle" rot="R90"/>
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+</symbol>
 <symbol name="WS2812BLED">
 <pin name="VDD" x="5.08" y="15.24" visible="pin" length="middle" direction="pwr" rot="R270"/>
 <pin name="DI" x="-12.7" y="-2.54" visible="pin" length="middle" direction="in"/>
@@ -47136,7 +47203,7 @@ Big Oval pads</description>
 <deviceset name="AAA" prefix="BATT">
 <description>&lt;b&gt;AAA PC pin holder&lt;/b&gt;
 &lt;p&gt;
-Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the same 
+Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the same
 &lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="AAA" x="0" y="0"/>
@@ -47488,7 +47555,7 @@ PNA4602 and related receivers
 <deviceset name="CR1220" uservalue="yes">
 <description>&lt;b&gt;CR1216/CR1220/CR1225 12mm 3V lithium coin cell &lt;/b&gt;
 &lt;p&gt;
-Great for battery packup. Both SMT and THM holders. 
+Great for battery packup. Both SMT and THM holders.
 &lt;br&gt;
 Note the THM package has the ground pads on both sides of the PCB so that the masks are the same - this reduces the cost</description>
 <gates>
@@ -55158,6 +55225,47 @@ AT42QT1070 in standalone mode has 5 inputs (guard + 4 key) and open drain output
 <connect gate="G$1" pin="NC" pad="16"/>
 <connect gate="G$1" pin="USB" pad="26"/>
 <connect gate="G$1" pin="VBAT" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HUZZAH_BREAKOUT_ESP8266">
+<description>&lt;b&gt;Adafruit HUZZAH ESP8266 Breakout Board&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="HUZZAH_BREAKOUT_ESP8266" x="0" y="0"/>
+</gates>
+<devices>
+<device name="THROUGHHOLE" package="HUZZAH_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="0" pad="0"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="LDO" pad="LDO"/>
+<connect gate="G$1" pin="NC1" pad="NC1"/>
+<connect gate="G$1" pin="NC2" pad="NC2"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="RX1" pad="RX1"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="TX1" pad="TX1"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VCC1" pad="VCC1"/>
 </connects>
 <technologies>
 <technology name=""/>
