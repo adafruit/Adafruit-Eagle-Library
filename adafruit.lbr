@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -33803,32 +33803,32 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <wire x1="25.47" y1="0" x2="25.47" y2="38.44" width="0.127" layer="21"/>
 <wire x1="25.47" y1="38.44" x2="0" y2="38.44" width="0.127" layer="21"/>
 <wire x1="0" y1="38.44" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="1"  x="2.54"  y="6.46"  drill="0.8"/>
-<pad name="2"  x="2.54"  y="9.00"  drill="0.8"/>
-<pad name="3"  x="2.54"  y="11.54" drill="0.8"/>
-<pad name="4"  x="2.54"  y="14.08" drill="0.8"/>
-<pad name="5"  x="2.54"  y="16.62" drill="0.8"/>
-<pad name="6"  x="2.54"  y="19.16" drill="0.8"/>
-<pad name="7"  x="2.54"  y="21.70" drill="0.8"/>
-<pad name="8"  x="2.54"  y="24.24" drill="0.8"/>
-<pad name="9"  x="2.54"  y="26.78" drill="0.8"/>
-<pad name="10" x="2.54"  y="29.32" drill="0.8"/>
-<pad name="11" x="23.00" y="6.46"  drill="0.8"/>
-<pad name="12" x="23.00" y="9.00"  drill="0.8"/>
-<pad name="13" x="23.00" y="11.54" drill="0.8"/>
-<pad name="14" x="23.00" y="14.08" drill="0.8"/>
-<pad name="15" x="23.00" y="16.62" drill="0.8"/>
-<pad name="16" x="23.00" y="19.16" drill="0.8"/>
-<pad name="17" x="23.00" y="21.70" drill="0.8"/>
-<pad name="18" x="23.00" y="24.24" drill="0.8"/>
-<pad name="19" x="23.00" y="26.78" drill="0.8"/>
-<pad name="20" x="23.00" y="29.32" drill="0.8"/>
-<pad name="21" x="6.46"  y="2.54" drill="0.8"/>
-<pad name="22" x="9.00"  y="2.54" drill="0.8"/>
-<pad name="23" x="11.54" y="2.54" drill="0.8"/>
-<pad name="24" x="14.08" y="2.54" drill="0.8"/>
-<pad name="25" x="16.62" y="2.54" drill="0.8"/>
-<pad name="26" x="19.16" y="2.54" drill="0.8"/>
+<pad name="GND1" x="2.54" y="6.46" drill="1"/>
+<pad name="VBAT" x="2.54" y="9" drill="1"/>
+<pad name="VCC1" x="2.54" y="11.54" drill="1"/>
+<pad name="13" x="2.54" y="14.08" drill="1"/>
+<pad name="12" x="2.54" y="16.62" drill="1"/>
+<pad name="14" x="2.54" y="19.16" drill="1"/>
+<pad name="16" x="2.54" y="21.7" drill="1"/>
+<pad name="EN" x="2.54" y="24.24" drill="1"/>
+<pad name="A" x="2.54" y="26.78" drill="1"/>
+<pad name="RST" x="2.54" y="29.32" drill="1"/>
+<pad name="GND2" x="23" y="6.46" drill="1"/>
+<pad name="LDO" x="23" y="9" drill="1"/>
+<pad name="3V3" x="23" y="11.54" drill="1"/>
+<pad name="15" x="23" y="14.08" drill="1"/>
+<pad name="2" x="23" y="16.62" drill="1"/>
+<pad name="0" x="23" y="19.16" drill="1"/>
+<pad name="4" x="23" y="21.7" drill="1"/>
+<pad name="5" x="23" y="24.24" drill="1"/>
+<pad name="RX1" x="23" y="26.78" drill="1"/>
+<pad name="TX1" x="23" y="29.32" drill="1"/>
+<pad name="NC1" x="6.46" y="2.54" drill="1"/>
+<pad name="TX" x="9" y="2.54" drill="1"/>
+<pad name="RX" x="11.54" y="2.54" drill="1"/>
+<pad name="VCC" x="14.08" y="2.54" drill="1"/>
+<pad name="NC2" x="16.62" y="2.54" drill="1"/>
+<pad name="GND" x="19.16" y="2.54" drill="1"/>
 <text x="12.22" y="26.34" size="1.27" layer="21" rot="R270">ADAFRUIT HUZZAH</text>
 </package>
 <package name="WS2812B-NARROW">
@@ -43614,8 +43614,8 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <pin name="14" x="-17.78" y="2.54" length="middle"/>
 <pin name="12" x="-17.78" y="0" length="middle"/>
 <pin name="13" x="-17.78" y="-2.54" length="middle"/>
-<pin name="V+1" x="-17.78" y="-5.08" length="middle"/>
-<pin name="VBat" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VCC1" x="-17.78" y="-5.08" length="middle"/>
+<pin name="VBAT" x="-17.78" y="-7.62" length="middle"/>
 <pin name="GND1" x="-17.78" y="-10.16" length="middle"/>
 <pin name="TX1" x="15.24" y="12.7" length="middle" rot="R180"/>
 <pin name="RX1" x="15.24" y="10.16" length="middle" rot="R180"/>
@@ -43627,12 +43627,12 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <pin name="3V3" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <pin name="LDO" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="GND2" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<pin name="GRN" y="-22.86" x="-7.62" length="middle" rot="R90"/>
-<pin name="TX" y="-22.86" x="-5.08" length="middle" rot="R90"/>
-<pin name="RX" y="-22.86" x="-2.54" length="middle" rot="R90"/>
-<pin name="V+" y="-22.86" x="0" length="middle" rot="R90"/>
-<pin name="BRN" y="-22.86" x="2.54" length="middle" rot="R90"/>
-<pin name="GND" y="-22.86" x="5.08" length="middle" rot="R90"/>
+<pin name="NC1" x="-7.62" y="-22.86" length="middle" rot="R90"/>
+<pin name="TX" x="-5.08" y="-22.86" length="middle" rot="R90"/>
+<pin name="RX" x="-2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="VCC" x="0" y="-22.86" length="middle" rot="R90"/>
+<pin name="NC2" x="2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="GND" x="5.08" y="-22.86" length="middle" rot="R90"/>
 <wire x1="-12.7" y1="17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
@@ -55240,35 +55240,39 @@ AT42QT1070 in standalone mode has 5 inputs (guard + 4 key) and open drain output
 <devices>
 <device name="THROUGHHOLE" package="HUZZAH_BREAKOUT">
 <connects>
-<connect gate="G$1" pin="RST"  pad="1"/>
-<connect gate="G$1" pin="A"    pad="2"/>
-<connect gate="G$1" pin="EN"   pad="3"/>
-<connect gate="G$1" pin="16"   pad="4"/>
-<connect gate="G$1" pin="14"   pad="5"/>
-<connect gate="G$1" pin="12"   pad="6"/>
-<connect gate="G$1" pin="13"   pad="7"/>
-<connect gate="G$1" pin="V+1"  pad="8"/>
-<connect gate="G$1" pin="VBat" pad="9"/>
-<connect gate="G$1" pin="GND1" pad="10"/>
-<connect gate="G$1" pin="TX1"  pad="11"/>
-<connect gate="G$1" pin="RX1"  pad="12"/>
-<connect gate="G$1" pin="5"    pad="13"/>
-<connect gate="G$1" pin="4"    pad="14"/>
-<connect gate="G$1" pin="0"    pad="15"/>
-<connect gate="G$1" pin="2"    pad="16"/>
-<connect gate="G$1" pin="15"   pad="17"/>
-<connect gate="G$1" pin="3V3"  pad="18"/>
-<connect gate="G$1" pin="LDO"  pad="19"/>
-<connect gate="G$1" pin="GND2" pad="20"/>
-<connect gate="G$1" pin="GRN"  pad="21"/>
-<connect gate="G$1" pin="TX"   pad="22"/>
-<connect gate="G$1" pin="RX"   pad="23"/>
-<connect gate="G$1" pin="V+"   pad="24"/>
-<connect gate="G$1" pin="BRN"  pad="25"/>
-<connect gate="G$1" pin="GND"  pad="26"/>
+<connect gate="G$1" pin="0" pad="0"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="LDO" pad="LDO"/>
+<connect gate="G$1" pin="NC1" pad="NC1"/>
+<connect gate="G$1" pin="NC2" pad="NC2"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="RX1" pad="RX1"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="TX1" pad="TX1"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VCC1" pad="VCC1"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
 </device>
 </devices>
+</deviceset>
 <deviceset name="WS2812B" prefix="LED">
 <gates>
 <gate name="G$1" symbol="WS2812BLED" x="0" y="-2.54"/>
