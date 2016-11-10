@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -43617,38 +43617,38 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <wire x1="2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 <symbol name="ATMEGA328P">
-<wire x1="-17.78" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-40.894" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
 <wire x1="15.24" y1="25.4" x2="15.24" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-33.02" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="25.4" width="0.254" layer="94"/>
-<pin name="(SCK)PB5" x="20.32" y="22.86" length="middle" rot="R180"/>
-<pin name="(MISO)PB4" x="20.32" y="20.32" length="middle" rot="R180"/>
-<pin name="(MOSI)PB3" x="20.32" y="17.78" length="middle" rot="R180"/>
-<pin name="(SS)PB2" x="20.32" y="15.24" length="middle" rot="R180"/>
-<pin name="(OC1)PB1" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="(ICP)PB0" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="(ADC5)PC5" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="(ADC4)PC4" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="(ADC3)PC3" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="(ADC2)PC2" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="(ADC1)PC1" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="(ADC0)PC0" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="(AIN1)PD7" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="(AIN0)PD6" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="(T1)PD5" x="20.32" y="-17.78" length="middle" rot="R180"/>
-<pin name="(T0)PD4" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="(INT1)PD3" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<pin name="(INT0)PD2" x="20.32" y="-25.4" length="middle" rot="R180"/>
-<pin name="(TXD)PD1" x="20.32" y="-27.94" length="middle" rot="R180"/>
-<pin name="(RXD)PD0" x="20.32" y="-30.48" length="middle" rot="R180"/>
-<pin name="RESET" x="-22.86" y="22.86" length="middle"/>
-<pin name="XTAL2" x="-22.86" y="15.24" length="middle"/>
-<pin name="XTAL1" x="-22.86" y="10.16" length="middle"/>
-<pin name="AREF" x="-22.86" y="2.54" length="middle"/>
-<pin name="AVCC" x="-22.86" y="0" length="middle"/>
-<pin name="AGND" x="-22.86" y="-2.54" length="middle"/>
-<pin name="VCC" x="-22.86" y="-10.16" length="middle"/>
-<pin name="GND" x="-22.86" y="-12.7" length="middle"/>
+<wire x1="15.24" y1="-33.02" x2="-40.894" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-40.894" y1="-33.02" x2="-40.894" y2="25.4" width="0.254" layer="94"/>
+<pin name="(SCK/PCINT5)PB5" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="(MISO/PCINT4)PB4" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="(MOSI/OC2A/PCINT3)PB3" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="(SS/OC1B/PCINT2)PB2" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="(OC1A/PCINT1)PB1" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="(PCINT0/CLKO/ICP1)PB0" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="(ADC5/SCL/PCINT13)PC5" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="(ADC4/SDA/PCINT12)PC4" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="(ADC3/PCINT11)PC3" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="(ADC2/PCINT10)PC2" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="(ADC1/PCINT9)PC1" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="(ADC0/PCINT8)PC0" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="(PCINT23/AIN1)PD7" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="(PCINT22/OC0A/AIN0)PD6" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="(PCINT21/OC0B/T1)PD5" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<pin name="(PCINT20/XCK/T0)PD4" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="(PCINT19/OC2B//INT1)PD3" x="20.32" y="-22.86" length="middle" rot="R180"/>
+<pin name="(PCINT18/INT0)PD2" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<pin name="(PCINT17/TXD)PD1" x="20.32" y="-27.94" length="middle" rot="R180"/>
+<pin name="(PCINT16/RXD)PD0" x="20.32" y="-30.48" length="middle" rot="R180"/>
+<pin name="(PCINT14/RESET)PC6" x="-45.974" y="22.86" length="middle"/>
+<pin name="(PCIN7/XTAL2/TOSC2)PB7" x="-45.974" y="15.24" length="middle"/>
+<pin name="(PCINT6/XTAL1/TOSC1)PB6" x="-45.974" y="10.16" length="middle"/>
+<pin name="AREF" x="-45.974" y="2.54" length="middle"/>
+<pin name="AVCC" x="-45.974" y="0" length="middle"/>
+<pin name="AGND" x="-45.974" y="-2.54" length="middle"/>
+<pin name="VCC" x="-45.974" y="-10.16" length="middle"/>
+<pin name="GND" x="-45.974" y="-12.7" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -55245,6 +55245,36 @@ AT42QT1070 in standalone mode has 5 inputs (guard + 4 key) and open drain output
 </gates>
 <devices>
 <device name="DIL28" package="DIL28-3">
+<connects>
+<connect gate="G$1" pin="(ADC0/PCINT8)PC0" pad="23"/>
+<connect gate="G$1" pin="(ADC1/PCINT9)PC1" pad="24"/>
+<connect gate="G$1" pin="(ADC2/PCINT10)PC2" pad="25"/>
+<connect gate="G$1" pin="(ADC3/PCINT11)PC3" pad="26"/>
+<connect gate="G$1" pin="(ADC4/SDA/PCINT12)PC4" pad="27"/>
+<connect gate="G$1" pin="(ADC5/SCL/PCINT13)PC5" pad="28"/>
+<connect gate="G$1" pin="(MISO/PCINT4)PB4" pad="18"/>
+<connect gate="G$1" pin="(MOSI/OC2A/PCINT3)PB3" pad="17"/>
+<connect gate="G$1" pin="(OC1A/PCINT1)PB1" pad="15"/>
+<connect gate="G$1" pin="(PCIN7/XTAL2/TOSC2)PB7" pad="10"/>
+<connect gate="G$1" pin="(PCINT0/CLKO/ICP1)PB0" pad="14"/>
+<connect gate="G$1" pin="(PCINT14/RESET)PC6" pad="1"/>
+<connect gate="G$1" pin="(PCINT16/RXD)PD0" pad="2"/>
+<connect gate="G$1" pin="(PCINT17/TXD)PD1" pad="3"/>
+<connect gate="G$1" pin="(PCINT18/INT0)PD2" pad="4"/>
+<connect gate="G$1" pin="(PCINT19/OC2B//INT1)PD3" pad="5"/>
+<connect gate="G$1" pin="(PCINT20/XCK/T0)PD4" pad="6"/>
+<connect gate="G$1" pin="(PCINT21/OC0B/T1)PD5" pad="11"/>
+<connect gate="G$1" pin="(PCINT22/OC0A/AIN0)PD6" pad="12"/>
+<connect gate="G$1" pin="(PCINT23/AIN1)PD7" pad="13"/>
+<connect gate="G$1" pin="(PCINT6/XTAL1/TOSC1)PB6" pad="9"/>
+<connect gate="G$1" pin="(SCK/PCINT5)PB5" pad="19"/>
+<connect gate="G$1" pin="(SS/OC1B/PCINT2)PB2" pad="16"/>
+<connect gate="G$1" pin="AGND" pad="22"/>
+<connect gate="G$1" pin="AREF" pad="21"/>
+<connect gate="G$1" pin="AVCC" pad="20"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
